@@ -215,7 +215,7 @@ return 0;
 
 }
 
-#Exercicio 08
+#Exercicio 08 (Em desenvolvimento)
 
 //Faça um programa que leia a velocidade máxima permitida em uma avenida e a velocidade com que o motorista estava dirigindo nela e calcule a multa que uma pessoa vai receber, sabendo que são pagos:
 //a) 50 reais se o motorista ultrapassar em até 10km/h a velocidade permitida (ex.: velocidade máxima: 50km/h; motorista a 60km/h ou a 56km/h);
@@ -245,3 +245,20 @@ int main(){
 
 
 }
+
+#Exercicio 09
+//Faça um programa que leia um número inteiro de 1 a 7 e informe o dia da semana correspondente, sendo domingo o dia de número 1.
+//Se o número não corresponder a um dia da semana, mostre uma mensagem de erro.
+
+#Exercicio 10
+
+//Faça um programa que calcule os 20 primeiros números da sequência de Fibonacci. 0 1 1 2 3 5 8 13 21 34 ...
+
+#Exercicio 11
+
+//Faça um programa que calcule o fatorial de um número.
+
+#Exercicio 12
+
+//Faça um programa que imprima os múltiplos positivos de 7 inferiores a 1000.
+
