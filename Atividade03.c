@@ -215,7 +215,7 @@ return 0;
 
 }
 
-#Exercicio 08 (Em desenvolvimento)
+#Exercício 08
 
 //Faça um programa que leia a velocidade máxima permitida em uma avenida e a velocidade com que o motorista estava dirigindo nela e calcule a multa que uma pessoa vai receber, sabendo que são pagos:
 //a) 50 reais se o motorista ultrapassar em até 10km/h a velocidade permitida (ex.: velocidade máxima: 50km/h; motorista a 60km/h ou a 56km/h);
@@ -226,7 +226,7 @@ return 0;
 int main(){
 
 //Variáveis
-	int vel_motorista, vel_permitida, multa;
+	int vel_motorista, vel_permitida;
 
 //Receber valores
 	printf("\nInsira a velocidade atingida pelo motorista: ");
@@ -235,14 +235,28 @@ int main(){
 	printf("\nInsira a velocidade máxima permitida: ");
 	scanf("%d", &vel_permitida);
 
-	if (vel_motorista > vel_permitida = true){
-		if(vel_motorista == vel_permitida + 10){
-		printf("O motorista ultrapassou a velocidade máxima permitida e pagará uma multa de: ")
-		}
-	
-	
-	}
+//Condições
 
+	if ( vel_motorista == vel_permitida +1 || vel_motorista == vel_permitida +2 || vel_motorista == vel_permitida +3 || vel_motorista == vel_permitida +4 
+	|| vel_motorista ==vel_permitida +5 || vel_motorista == vel_permitida +6 || vel_motorista == vel_permitida +7 || vel_motorista == vel_permitida +8 
+	|| vel_motorista == vel_permitida +9 || vel_motorista == vel_permitida +10) {
+
+		printf("\nO motorista será multado em R$50.00\n\n");
+
+				}
+				else if (vel_motorista >= vel_permitida + 11 && vel_motorista <= vel_permitida + 30){
+					printf("O motorista será multado em R$100,00 \n\n");
+
+			}
+			else if (vel_motorista >= vel_permitida + 31){
+				printf("O motorista foi multado em R$200.00\n\n");
+
+		}
+		else if (vel_motorista <= vel_permitida){
+			printf("Velocidade Ok\n\n");
+		}
+
+	return 0;
 
 }
 
@@ -250,15 +264,133 @@ int main(){
 //Faça um programa que leia um número inteiro de 1 a 7 e informe o dia da semana correspondente, sendo domingo o dia de número 1.
 //Se o número não corresponder a um dia da semana, mostre uma mensagem de erro.
 
+#include<stdio.h>
+
+int main(){
+
+//Variáveis
+
+	int dom = 1, seg = 2, ter = 3, qua = 4, qui = 5, sex = 6, sab = 7, x;
+
+//Receber o valor
+	printf("\nPor favor, insira um número de 1 a 7: ");
+	scanf("%d", &x);
+
+//Condições
+	if (x == dom){
+		printf("\nEsse número é equivalente ao primeiro dia da semana, domingo.\n");
+	}
+
+	else if (x == seg){
+		printf("\nEsse número é equivalente ao segundo dia da semana, segunda-feira.\n");
+	}
+
+	else if (x == ter){
+		printf("\nEsse número é equivalente ao terceiro dia da semana, terça-feira.\n");
+	}
+
+	else if (x == qua){
+		printf("\nEsse número é equivalente ao quarto dia da semana, quarta-feira.\n");
+	}
+
+	else if (x == qui){
+		printf("\nEsse número é equivalente ao quinto dia da semana, quinta-feira.\n");
+	}
+
+	else if (x == sex){
+		printf("\nEsse número é equivalente ao melhor dia da semana, sexta-feira \\(°o°)/\n");
+	}
+
+	else if (x == sab){
+		printf("\nEsse número é equivalente ao último dia da semana, sábado.\n");
+	}
+
+	else{
+		printf("\nincorreto, por favor, reinicie o programa e adicione um número de 1(um) a 7(sete).\n");
+	}
+
+}
+
 #Exercicio 10
 
 //Faça um programa que calcule os 20 primeiros números da sequência de Fibonacci. 0 1 1 2 3 5 8 13 21 34 ...
+
+#include <stdio.h>
+
+	int main(){
+
+//Variáveis
+	int a = 0, b = 1, auxiliar, i, n = 20;
+
+//Mensagem no terminal e primeiro número
+	printf("Série de Fibonacci:\n");
+	printf("%d\n", b);
+
+//Laço com Variável de Controle
+	for(i = 0; i < n; i++){
+//instruções
+	auxiliar = a + b;
+
+	a = b;
+
+	b = auxiliar;
+
+//Demais números
+	printf("%d\n", auxiliar);
+
+	}
+}
 
 #Exercicio 11
 
 //Faça um programa que calcule o fatorial de um número.
 
+#include <stdio.h>
+
+int main(){
+
+//Variáveis
+	int CONTADOR, N;
+	long FATORIAL = 1;
+
+//Variáveis com valor fíxo
+	CONTADOR = 1;
+
+//Mensagem no terminal
+	printf("\nPrograma Fatorial\n");
+
+//Coleta de dados
+	printf("\nPor favor, insira um número para calcular sua fatorial: "); 
+	scanf("%d", &N);
+
+//Looping do tipo While
+	while (CONTADOR <= N){
+
+	FATORIAL *= CONTADOR;
+	CONTADOR ++;
+	}
+//Resultado
+	printf("\nFatorial de %d equivale a %ld\n\n", N, FATORIAL);
+	return 0;
+}
+
 #Exercicio 12
 
 //Faça um programa que imprima os múltiplos positivos de 7 inferiores a 1000.
 
+#include <stdio.h>
+
+int main(){
+
+	int z = 0, x = 7, i, n = 1000; 
+
+	printf("\n\nEis os múltiplos de 7 inferiores a 1000.\n\n");
+
+	while (z < n){
+	i = x * z;
+	z ++;
+	printf("\n%d\n", i);
+	}
+	return 0;
+
+}
